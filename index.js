@@ -1,3 +1,5 @@
+var books = require('./lib/book.js');
+
 var http = require("http"); 
 http.createServer(function(req,res) {
   var path = req.url.toLowerCase();

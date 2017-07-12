@@ -18,5 +18,9 @@
   "bugs": {
     "url": "https://github.com/BealBC/itc230/issues"
   },
-  "homepage": "https://github.com/BealBC/itc230#readme"
+  "homepage": "https://github.com/BealBC/itc230#readme",
+  "dependencies": {
+    "express": "^4.15.3",
+    "express-handlebars": "^3.0.0"
+  }
 }

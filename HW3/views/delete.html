@@ -1,0 +1,18 @@
+<html>
+    <body>
+        <a href="/">Delete</a>
+
+{{#if result.deleted}}
+
+    <h2>{{brand}} deleted.</h2>
+    
+    remaining total: {{result.total}}
+    
+{{else}}
+
+    <h2>{{brand}} not found</h2>
+    
+{{/if}}
+
+    </body>
+</html>

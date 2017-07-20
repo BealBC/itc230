@@ -19,7 +19,9 @@
     "url": "https://github.com/BealBC/itc230/issues"
   },
   "homepage": "https://github.com/BealBC/itc230#readme",
+  
   "dependencies": {
+    "body-parser": "^1.17.2",
     "express": "^4.15.3",
     "express-handlebars": "^3.0.0"
   },

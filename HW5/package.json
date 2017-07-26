@@ -1,0 +1,33 @@
+{
+  "name": "itc230",
+  "version": "1.0.0",
+  "description": "Week 1",
+  "main": "index.js",
+  "scripts": {
+    "test": "testing"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BealBC/itc230.git"
+  },
+  "keywords": [
+    "bbeal003"
+  ],
+  "author": "Benjamin Beal",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/BealBC/itc230/issues"
+  },
+  "homepage": "https://github.com/BealBC/itc230#readme",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "express": "^4.15.3",
+    "express-handlebars": "^3.0.0",
+    "mongoose": "^4.11.4"
+  },
+  "devDependencies": {
+    "chai": "^4.1.0",
+    "eslint": "^4.3.0",
+    "mocha": "^3.4.2"
+  }
+}

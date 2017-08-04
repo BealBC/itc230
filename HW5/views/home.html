@@ -1,0 +1,14 @@
+<h2>Bike Home</h2>
+
+<form method="POST" action="/get">
+    <input type="text" name="brand" placeholder="Brand" required maxlength="100">
+    <button>Search</button>
+</form>
+
+{{#if bikes}}
+<h3>List of Bikes</h3>
+{{/if}}
+{{#each bikes}}
+    <li><a href="/get?brand={{brand}}">{{brand}}</a></li>
+{{/each}}
+</body>

@@ -1,7 +1,7 @@
 {
   "name": "itc230",
   "version": "1.0.0",
-  "description": "Week 1",
+  "description": "Week 5",
   "main": "index.js",
   "scripts": {
     "test": "testing"

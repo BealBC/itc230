@@ -1,0 +1,11 @@
+{{#if result}}
+    <h2>{{brand}} details</h2> 
+    <li>Brand: {{result.brand}}</li>
+    <li>Model: {{result.model}}</li>
+    <li>Size: {{result.size}}</li>
+    <p>
+    <a href="/delete?title={{result.brand}}">Delete</a>
+    </p>
+{{else}}
+        <h2>{{brand}} Brand Not Found</h2>
+{{/if}}

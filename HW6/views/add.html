@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<body>
+    <a href="/">HOME</a>
+    
+    {{#if savedNewBike}}
+    <h1>Bike Added: {{savedNewBike.model}}</h1>
+    <p>New Total: {{totalBikes}}</p>
+   
+    {{else if bikeExists}}
+    <h1>This bike {{newBikeDetails.brand}} already exists.</h1>
+    <p>No bike was added.</p>
+    
+    {{else}}
+    <h1>No bike details entered.</h1>
+    <p>No bike was added.</p>
+    
+    {{/if}}
+    
+</body>
+</html>

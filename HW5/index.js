@@ -47,13 +47,15 @@ app.post('/get', (req,res, next) => {
 });
 
 
-app.get('/delete', (req,res) => {
-    Bike.remove({ brand:req.query.brand }, (err, result) => {
+app.get('/delete', function(req, res, next) {
+    let bikeToDelete = req.query.brand;
+    
+    Bike.findOne({brand:bikeToDelete}, function(err, bikeDeleted) {
         if (err) return next(err);
-        let deleted = result.result.n !== 0;
-        Bike.count((err, total) => {
-            res.type('text/html');
-            res.render('delete', {brand: req.query.brand, deleted: result.result.n !== 0, total: total });    
+        
+        Bike.count({}, function(err, totalBikes) { 
+            if (err) return next(err);
+            res.render('delete', {bikeDeleted, totalBikes, bikeToDelete});
         });
     });
 });
@@ -64,6 +66,7 @@ app.use(function(req, res){
   res.status(404);
   res.render('404');
 });
+
 
 app.listen(app.get('port'), () => {
     console.log('Express started');    

@@ -1,0 +1,29 @@
+<!doctype>
+<html>
+<head>
+    <title>Bike App</title>
+</head>    
+
+<body>
+    <header>Bike App</header>
+    <hr>
+    {{{body}}}
+    </hr>
+    <br>
+    <div class="nav">
+    {{! only show home link if on detail page }}
+    {{#if bikes}} {{else}} <a href="/">Home</a> |{{/if}}
+    <a href="/about">About Page</a></div>
+    
+<br>
+    
+<footer>
+   <small>
+       &copy; 2016, All Rights Reserved ~ Authored by Benjamin Beal ~ 
+	   <a href="https://github.com/BealBC/itc230">GitHub Repository</a> ~
+       <a href="http://validator.w3.org/check/referer" target="_blank">Valid HTML</a> ~  
+       <a href="http://jigsaw.w3.org/css-validator/check?uri=referer" target="_blank">Valid CSS</a>
+    </small>
+</footer>
+    </body>
+</html>
